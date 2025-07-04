@@ -91,7 +91,7 @@ Project Details:
 ${formData.message}
       `.trim();
 
-      const mailtoLink = `mailto:info@intmaterials.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:info@InterfaceMaterials.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
       // Open email client
       window.location.href = mailtoLink;
@@ -264,7 +264,7 @@ ${formData.message}
                   <CardContent className="space-y-4">
                     <div>
                       <h3 className="font-semibold text-zinc-900 mb-1">Email</h3>
-                      <p className="text-zinc-600">info@intmaterials.com</p>
+                      <p className="text-zinc-600">info@InterfaceMaterials.com</p>
                     </div>
 
                     <div>
@@ -331,7 +331,7 @@ ${formData.message}
                       className="w-full bg-white text-zinc-900 hover:bg-zinc-100"
                       asChild
                     >
-                      <a href="mailto:info@intmaterials.com">
+                      <a href="mailto:info@InterfaceMaterials.com">
                         Email Us Directly
                       </a>
                     </Button>

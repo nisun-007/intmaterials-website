@@ -12,7 +12,7 @@ export default function About() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-16">
               <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
-                About intmaterials
+                About InterfaceMaterials
               </h1>
               <p className="mt-6 text-lg leading-8 text-zinc-600">
                 Expertise in materials science and surface chemistry consulting
@@ -32,7 +32,7 @@ export default function About() {
                 <h2 className="text-2xl font-bold text-zinc-900 mb-6">Our Mission</h2>
                 <div className="prose prose-lg text-zinc-600">
                   <p>
-                    intmaterials LLC is dedicated to providing world-class consulting services in materials science
+                    InterfaceMaterials LLC is dedicated to providing world-class consulting services in materials science
                     and surface chemistry. We bridge the gap between fundamental research and practical applications,
                     helping organizations overcome technical challenges and accelerate innovation.
                   </p>

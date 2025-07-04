@@ -41,7 +41,7 @@ const Logo: React.FC<LogoProps> = ({ className = "", size = 40, white = false })
       </svg>
 
       <div className={`text-2xl font-bold ${textColor}`}>
-        intmaterials
+        InterfaceMaterials
       </div>
     </div>
   );
