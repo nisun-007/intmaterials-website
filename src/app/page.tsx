@@ -19,10 +19,10 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % researchImages.length);
+      setCurrentImageIndex((prev) => (prev + 1) % 4);
     }, 4000);
     return () => clearInterval(interval);
-  }, [researchImages.length]);
+  }, []);
   return (
     <div className="min-h-screen bg-zinc-50">
       <Navigation />
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="absolute inset-0">
           {researchImages.map((image, index) => (
             <div
-              key={index}
+              key={image}
               className={`absolute inset-0 transition-opacity duration-2000 ${
                 index === currentImageIndex ? 'opacity-30' : 'opacity-0'
               }`}
