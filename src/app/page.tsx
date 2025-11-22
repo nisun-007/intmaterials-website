@@ -34,9 +34,8 @@ export default function Home() {
           {researchImages.map((image, index) => (
             <div
               key={image}
-              className={`absolute inset-0 transition-opacity duration-2000 ${
-                index === currentImageIndex ? 'opacity-30' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 transition-opacity duration-2000 ${index === currentImageIndex ? 'opacity-30' : 'opacity-0'
+                }`}
             >
               <img
                 src={image}
@@ -145,66 +144,104 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* What We Do Section */}
       <section id="portfolio-section" className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-              Core Expertise
+              What We Do
             </h2>
             <p className="mt-4 text-lg text-zinc-600">
-              Comprehensive consulting services tailored to your materials challenges
+              Transforming complex interfacial behavior into actionable insights and scalable solutions.
             </p>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Item 1 */}
             <Card className="bg-white border-zinc-200 hover:shadow-lg transition-shadow">
               <div className="aspect-video relative overflow-hidden rounded-t-lg">
                 <img
                   src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
-                  alt="Materials scientist conducting characterization testing"
+                  alt="Advanced Interface Characterization"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-zinc-900">Materials Characterization</CardTitle>
+                <CardTitle className="text-zinc-900">Advanced Interface Characterization</CardTitle>
                 <CardDescription>
-                  Advanced analysis and characterization of material properties and structures
+                  High-resolution experimental techniques to study chemical, mechanical, and microstructural changes at interfaces.
                 </CardDescription>
               </CardHeader>
             </Card>
 
+            {/* Item 2 */}
             <Card className="bg-white border-zinc-200 hover:shadow-lg transition-shadow">
               <div className="aspect-video relative overflow-hidden rounded-t-lg">
                 <img
                   src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop"
-                  alt="Surface chemistry laboratory with microscope and analytical equipment"
+                  alt="Radiation & Extreme-Environment Materials Testing"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-zinc-900">Surface Chemistry</CardTitle>
+                <CardTitle className="text-zinc-900">Radiation & Extreme-Environment Testing</CardTitle>
                 <CardDescription>
-                  Expert analysis of surface interactions, modifications, and treatments
+                  Analysis of interface stability, defect evolution, and degradation pathways for energy materials.
                 </CardDescription>
               </CardHeader>
             </Card>
 
+            {/* Item 3 */}
             <Card className="bg-white border-zinc-200 hover:shadow-lg transition-shadow">
               <div className="aspect-video relative overflow-hidden rounded-t-lg">
                 <img
                   src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop"
-                  alt="Advanced nanomaterial characterization and research equipment"
+                  alt="AI-Driven Interface Modeling"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-zinc-900">Research & Development</CardTitle>
+                <CardTitle className="text-zinc-900">AI-Driven Interface Modeling & Prediction</CardTitle>
                 <CardDescription>
-                  Strategic consulting for materials R&D programs and innovation initiatives
+                  Data-centric workflows combining physics-based simulation with ML to accelerate materials discovery.
                 </CardDescription>
               </CardHeader>
             </Card>
+
+            {/* Item 4 */}
+            <Card className="bg-white border-zinc-200 hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+                  alt="Protective Coatings"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-zinc-900">Protective Coatings & Surface Engineering</CardTitle>
+                <CardDescription>
+                  Development of corrosion-resistant, radiation-tolerant, and high-temperature coatings.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            {/* Item 5 */}
+            <Card className="bg-white border-zinc-200 hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop"
+                  alt="Materials Interface Database"
+                  className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-zinc-900">Materials Interface Database Development</CardTitle>
+                <CardDescription>
+                  Building the first comprehensive database focused on interfacial properties across energy systems.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
           </div>
         </div>
       </section>
