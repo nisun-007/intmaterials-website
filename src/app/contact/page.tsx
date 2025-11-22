@@ -269,7 +269,7 @@ export default function Contact() {
                   <CardContent className="space-y-4">
                     <div>
                       <h3 className="font-semibold text-zinc-900 mb-1">Email</h3>
-                      <p className="text-zinc-600">info@InterfaceMaterials.com</p>
+                      <p className="text-zinc-600">info@intmaterials.com</p>
                     </div>
 
                     <div>
@@ -336,7 +336,7 @@ export default function Contact() {
                       className="w-full bg-white text-zinc-900 hover:bg-zinc-100"
                       asChild
                     >
-                      <a href="mailto:info@InterfaceMaterials.com">
+                      <a href="mailto:info@intmaterials.com">
                         Email Us Directly
                       </a>
                     </Button>
