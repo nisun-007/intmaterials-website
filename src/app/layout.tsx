@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "InterfaceMaterials | Materials Science & Surface Chemistry Consulting",
-  description: "Expert consulting in materials science and surface chemistry — portfolio, services, and contact.",
+  description: "Expert consulting in materials science and surface chemistry: portfolio, services, and contact.",
 };
 
 export default function RootLayout({

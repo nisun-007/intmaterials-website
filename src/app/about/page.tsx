@@ -45,7 +45,7 @@ export default function About() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg leading-relaxed text-zinc-600">
-                      To become the leading global authority in materials interface science—delivering breakthrough insights, advanced coatings, and data-driven technologies that enable safer, longer-lasting, and more sustainable energy systems for the future.
+                      To become the leading global authority in materials interface science: delivering breakthrough insights, advanced coatings, and data-driven technologies that enable safer, longer-lasting, and more sustainable energy systems for the future.
                     </p>
                   </CardContent>
                 </Card>
