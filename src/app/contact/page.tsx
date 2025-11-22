@@ -78,28 +78,21 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Create mailto link
-      const subject = `New Contact Form Submission - ${formData.projectType}`;
-      const body = `
-Name: ${formData.firstName} ${formData.lastName}
-Email: ${formData.email}
-Company: ${formData.company}
-Phone: ${formData.phone || "Not provided"}
-Project Type: ${formData.projectType}
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          ...formData,
+        }).toString(),
+      });
 
-Project Details:
-${formData.message}
-      `.trim();
-
-      const mailtoLink = `mailto:info@InterfaceMaterials.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-      // Open email client
-      window.location.href = mailtoLink;
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
 
       // Show success message and clear form
-      toast.success("Your message has been prepared! Please send the email from your email client.", {
-        duration: 5000,
-      });
+      toast.success("Message sent successfully! We'll get back to you soon.");
 
       // Clear form
       setFormData({
@@ -113,11 +106,13 @@ ${formData.message}
       });
 
     } catch (error) {
-      toast.error("There was an error processing your request. Please try again.");
+      console.error("Form submission error:", error);
+      toast.error("There was an error sending your message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
+
   return (
     <div className="min-h-screen bg-zinc-50">
       <Navigation />
@@ -144,7 +139,17 @@ ${formData.message}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-6"
+                    name="contact"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div hidden>
+                      <input name="bot-field" />
+                    </div>
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">First Name <span className="text-red-500">*</span></Label>
