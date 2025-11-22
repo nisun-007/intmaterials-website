@@ -111,7 +111,7 @@ export default function About() {
                   <Card className="bg-white border-zinc-200 hover:shadow-md transition-shadow">
                     <CardHeader>
                       <div className="text-blue-600 font-bold text-lg mb-2">04</div>
-                      <CardTitle className="text-xl text-zinc-900">Enable Predictive Modeling of Interfaces for Extreme Environments</CardTitle>
+                      <CardTitle className="text-xl text-zinc-900">Enable Predictive Modeling of Interfaces for Complex Environments</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-zinc-600 list-disc pl-5">

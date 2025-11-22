@@ -129,7 +129,7 @@ export default function Home() {
               variant="outline"
               size="lg"
               asChild
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 text-lg px-10 py-4 min-w-[250px] transform hover:scale-105 transition-all duration-300 shadow-xl"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 text-lg px-10 py-4 min-w-[250px] transform hover:scale-105 transition-all duration-300 shadow-xl"
             >
               <Link href="/contact">Get in Touch</Link>
             </Button>
@@ -179,12 +179,12 @@ export default function Home() {
               <div className="aspect-video relative overflow-hidden rounded-t-lg">
                 <img
                   src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop"
-                  alt="Radiation & Extreme-Environment Materials Testing"
+                  alt="Radiation & Complex-Environment Materials Testing"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-zinc-900">Radiation & Extreme-Environment Testing</CardTitle>
+                <CardTitle className="text-zinc-900">Radiation & Complex-Environment Testing</CardTitle>
                 <CardDescription>
                   Analysis of interface stability, defect evolution, and degradation pathways for energy materials.
                 </CardDescription>
