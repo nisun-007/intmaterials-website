@@ -40,7 +40,7 @@ const Logo: React.FC<LogoProps> = ({ className = "", size = 40, white = false })
         <line x1="16" y1="20" x2="24" y2="20" stroke={strokeColor} strokeWidth="1.5" />
       </svg>
 
-      <div className={`text-2xl font-bold ${textColor} select-none pointer-events-none`}>
+      <div className={`text-2xl font-bold ${textColor} select-none`}>
         InterfaceMaterials
       </div>
     </div>

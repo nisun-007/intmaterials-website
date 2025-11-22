@@ -168,20 +168,6 @@ nav a * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  cursor: pointer;
   caret-color: transparent;
   -webkit-tap-highlight-color: transparent;
-}
-
-/* Prevent contenteditable behavior */
-button *,
-a[role="button"] *,
-nav a * {
-  pointer-events: none;
-}
-
-button,
-a[role="button"],
-nav a {
-  pointer-events: auto;
 }
