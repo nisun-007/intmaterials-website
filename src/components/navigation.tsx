@@ -39,9 +39,10 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-zinc-600 hover:text-zinc-900 transition-colors duration-200 font-medium"
+                className="text-zinc-600 hover:text-zinc-900 transition-all duration-200 font-medium relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-zinc-900 transition-all duration-200 group-hover:w-full"></span>
               </Link>
             ))}
           </nav>
@@ -61,7 +62,7 @@ const Navigation = () => {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="text-zinc-600 hover:text-zinc-900 transition-colors duration-200 font-medium py-2"
+                      className="text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 transition-all duration-200 font-medium py-2 px-3 rounded-md"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
